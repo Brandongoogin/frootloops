@@ -9,17 +9,24 @@ public class  Exercises{
         }
         return total;
     }
-    public static int howManyYears(double startpop, double endpop) {
+    public static int howManyYears(double startPop, double endPop) {
         int a=0;
-        while (startpop <= endpop) {
-            startpop = startpop + (startpop*.0113);
+        while (startPop <= endPop) {
+            startPop = startPop + (startPop*.0113);
             a++;
         }
         return a;
     }
-
-
-
+    public static int sumDigits(int n) {
+        int sum = 0;
+        int d;
+        while (n>= 0) {
+            d = n % 10;
+            n = n / 10;
+            sum = sum + d;
+        }
+        return sum;
+    }
 
 
     public static void main(String[] args) {
@@ -28,5 +35,8 @@ public class  Exercises{
         System.out.println(addOdds(13));
         System.out.println(howManyYears(111.2, 150));
         System.out.println(howManyYears(111.2, 120));
+        System.out.println(sumDigits(69));
+        System.out.println(sumDigits(720));
+        System.out.println(sumDigits(4200));
     }
 }
