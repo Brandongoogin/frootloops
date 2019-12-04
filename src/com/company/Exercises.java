@@ -20,13 +20,45 @@ public class  Exercises{
     public static int sumDigits(int n) {
         int sum = 0;
         int d;
-        while (n>= 0) {
+        while (n > 0) {
             d = n % 10;
             n = n / 10;
             sum = sum + d;
         }
         return sum;
     }
+    public static void  sillyNumbers() {
+        for (int c = 1; c <= 3; c++) {
+            for (int b = 0; b <= 9; b++) {
+                int a = 1;
+                while (a <= 3) {
+                    System.out.print(b);
+                    a++;
+                }
+            }
+            System.out.println();
+        }
+    }
+    public static void sillyNumbers2() {
+        for (int c = 1; c <= 4; c++) {
+            for (int a = 9; a >= 1; a--) {
+                for (int b = 1; b <=a; b++) {
+                    System.out.print(a);
+                }
+            }
+            System.out.println();
+        }
+    }
+    public static void dollarsAndStars() {
+        for (int n =1; n <=7; n++) {
+            for ()
+
+
+
+    }
+
+
+
 
 
     public static void main(String[] args) {
@@ -37,6 +69,9 @@ public class  Exercises{
         System.out.println(howManyYears(111.2, 120));
         System.out.println(sumDigits(69));
         System.out.println(sumDigits(720));
-        System.out.println(sumDigits(4200));
+        System.out.println(sumDigits(4201));
+        sillyNumbers();
+        sillyNumbers2();
+        dollarsAndStars();
     }
 }
