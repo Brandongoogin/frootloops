@@ -50,8 +50,11 @@ public class  Exercises{
         }
     }
     public static void dollarsAndStars() {
-        for (int n =1; n <=7; n++) {
-            for ()
+        for (int i =1; i <=7; i++) {
+            for (int q =0; q<=12; q= q +2) {
+                for (int n = 7; n>=1; n--) {
+                    for (int p = 14; p>=2; p= p - 2) {
+                        System.out.print("")
 
 
 
